@@ -120,11 +120,59 @@
 # R: 
 # 
 # a função input sempre devolve um string
+# -------------------------------------------
+# x = 10
+# y = 15
+# z = 25
+# print(x == z - y and z != y - x or not y != z - x)
+
+# true
+
+# 8.
+# Pergunta 8
+# Considere x = 10, y = 20 e z = 30, assinale quais das alternativas  abaixo resultam em True:
+    
+#     print(not y < 10 or not z == 10) 
+
+# Correto
+
+# print(x >= 10 or y != z - x)
+
+# Correto
+
+# print(x <= 30 and y >= 5)
+
+# Correto
+
+# print(not y > 10 or not z > 10)
+
+# Não deve ser selecionado
+
+# tempoDeJogo = int(input("Quanto de tempo já jogamos?"))
+
+# if tempoDeJogo <=90:
+#         print("Ainda tem jogo pela frente")
+#         print("que maravilia")
+# else:
+#         print("esta no fim do jogo")
+#         print("Pode apitar juiz")
+# 2.
+# Pergunta 2
+# Considere que a variável is_ready é do tipo booleano. Qual declaração está correta e é a forma mais sucinta de testar se is_ready é verdadeiro?
+
+# 0 / 1 ponto
+
+# if (is_ready  == True):
 
 
-a = int(input("Qual o valor de a? "))
-b = int(input("Qual o valor de b? "))
-a = b
-b = a
-print(a)
-print(b)
+# if (is_ready): <----correta
+
+
+# if (not is_ready  = False):
+
+
+# if (is_ready  = True):
+
+
+# if (not is_ready  == False):
+
