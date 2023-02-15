@@ -1,6 +1,10 @@
-n = int(input("Digite o valor de n: "))
-fatorial = 1
-while (n > 0):
-    fatorial = fatorial * n
-    print(fatorial)
-    n = n - 1
+n = int(input("Fatorial de: ") )
+
+fatorial=1
+count=1
+
+while (count <= n):
+    fatorial *= count #fatorial = fatorial * count
+    count = count + 1
+
+print(fatorial)
