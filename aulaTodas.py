@@ -176,3 +176,19 @@
 
 # if (not is_ready  == False):
 
+# A função pode receber ou não parâmetros. Isso depende da tarefa que a função irá executar e da necessidade de receber dados de entrada para realizar essa tarefa.
+
+# Em código bem feito, o nome da função deve representar a tarefa que ela irá executar. Isso ajuda a tornar o código mais legível e fácil de entender, pois indica claramente 
+# qual é a finalidade da função.
+
+# return é usado para a função devolver um determinado valor para quem a chamou. Isso é útil quando a função precisa retornar um resultado para o código que a chamou.
+
+# A função pode ou não devolver valor. Algumas funções podem ser usadas apenas para realizar uma tarefa específica e não precisam retornar nenhum valor. Outras funções 
+# podem ser usadas para realizar um cálculo ou uma operação e retornar um valor como resultado.
+
+# Parâmetros de uma função são valores que ela recebe para trabalhar. Esses valores podem ser usados pela função para realizar uma tarefa específica ou para 
+# influenciar o comportamento da função.
+
+
+
+
