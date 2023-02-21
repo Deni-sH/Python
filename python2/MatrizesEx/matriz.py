@@ -19,17 +19,33 @@
 # em que cada elemento possui o valor 99 
 # (valor=99). Portanto, a 
 # matriz resultante tem uma única linha com três elementos, que são todos iguais a 99.def tarefa(mat):
-def cria_matriz(num_linhas, num_colunas):
-    matriz = []  #lista vazia
-    for i in range(num_linhas):
-        linha = []
-        for j in range(num_colunas):
-            linha.append(0)
-        matriz.append(linha)
+# def cria_matriz(num_linhas, num_colunas):
+#     matriz = []  #lista vazia
+#     for i in range(num_linhas):
+#         linha = []
+#         for j in range(num_colunas):
+#             linha.append(0)
+#         matriz.append(linha)
 
-    for i in range(num_colunas):
-        for j in range(num_linhas):
-            matriz[j][i] = int(input("Digite o elemento [" + str(j) + "][" + str(i) + "]: "))
+#     for i in range(num_colunas):
+#         for j in range(num_linhas):
+#             matriz[j][i] = int(input("Digite o elemento [" + str(j) + "][" + str(i) + "]: "))
 
-    return matriz
+#     return matriz
 
+# Para executar a função minha_matriz que você criou, você precisa chamar a função em algum lugar do código e passar os argumentos corretos. Por exemplo, você pode adicionar o seguinte código no final do arquivo Python para criar uma matriz de 3 linhas por 4 colunas, com todos os elementos definidos como 0, e imprimir a matriz resultante no console:
+# matriz = minha_matriz(3, 4, 0)
+# print(matriz)
+# Depois de adicionar esse código, você pode executar o arquivo Python no VS Code usando o recurso de execução integrado. Isso deve imprimir a matriz resultante no console.
+# def minha_matriz(n_linhas, n_colunas, valor):
+#     matriz = []
+#     for i in range(n_linhas):
+#         linha = []
+#         for j in range(n_colunas):
+#             linha.append(valor)
+#         matriz.append(linha)
+    
+#     return matriz
+
+# matriz = minha_matriz(3, 4, 0)
+# print(matriz)
