@@ -140,3 +140,38 @@
 # print(fazAlgo("É UM TESTE"))
 
 # =Éumteste
+
+# def calculo(x, y = 10, z = 5):
+#     return x + y * z
+# print(calculo(1, 2, 3))
+# = 7
+
+
+#----------------------------------------------------
+
+# def horario_em_segundos(h, m, s):
+#     assert h >= 0 and m >= 0 and s >= 0
+#     return h * 3600 + m * 60 + s
+
+# print(horario_em_segundos (10,-10,34))
+
+#---------------------------------------------------------------------------------------------------
+
+# Módulos são compostos por funções (definições) e podem ter outros comandos (statements)   ?
+# Sim, módulos em Python podem ser compostos por funções e outros comandos (statements), como atribuições, condicionais, 
+# loops, entre outros. Esses comandos e funções podem ser importados em outros módulos ou programas Python, permitindo 
+# reutilização de código e modularidade. Além disso, é possível criar pacotes de módulos, que agrupam diversos módulos 
+# relacionados em um mesmo diretório.
+
+
+# Módulo podem se tornar uma entrada para o interpretador Python e assim ele é chamado de script?
+# Sim, isso é correto. Um módulo Python pode ser executado como um script, fazendo com que o interpretador execute o código 
+# contido nele. Para executar um módulo como um script, podemos usar o comando "python nome_do_modulo.py" no terminal.
+
+# Módulos é o mesmo que funções  
+# Não, módulos e funções são conceitos diferentes em Python.
+# Módulos são arquivos que contêm definições de classes, funções e variáveis que podem ser utilizados em outros programas Python.
+# Funções são blocos de código que realizam uma tarefa específica e podem ser chamadas e reutilizadas em diferentes partes do código.
+# Embora módulos possam conter funções, eles não são a mesma coisa. Os módulos são uma forma de organizar e reutilizar o código, enquanto as 
+# funções são blocos de código que executam tarefas específicas.
+
