@@ -3,7 +3,7 @@
 # while linha <= 10:  #enquanto linha for <= 10, a coluna vai rodar 
 #     while coluna <= 10:
 #         print (linha * coluna) 
-#         coluna = coluna +1 #uma hora, quando coluna chegar no 10, ele vai executar uma ultima vez e quando ele for pra 11 ele cai fora do while interno e vai pro externo
+#         coluna = coluna +1 #uma hora, quando coluna chegar no 10, ele vai executar uma ultima vez e quando ele for pra 11 ele cai f do while interno e vai pro externo
 #     linha = linha +1
 #         coluna = 1
     
@@ -28,7 +28,7 @@
 # while linha <= 10:  #enquanto linha for <= 10, a coluna vai rodar 
 #     while coluna <= 10:
 #         print (linha * coluna, end = " ") 
-#         coluna = coluna +1 #uma hora, quando coluna chegar no 10, ele vai executar uma ultima vez e quando ele for pra 11 ele cai fora do while interno e vai pro externo
+#         coluna = coluna +1 #uma hora, quando coluna chegar no 10, ele vai executar uma ultima vez e quando ele for pra 11 ele cai f do while interno e vai pro externo
 #     linha = linha +1
 #     coluna = 1
     
@@ -42,7 +42,7 @@
 # while linha <= 10:  #enquanto linha for <= 10, a coluna vai rodar 
 #     while coluna <= 10:
 #          print (linha * coluna, end = "\t") 
-#          coluna = coluna +1 #uma hora, quando coluna chegar no 10, ele vai executar uma ultima vez e quando ele for pra 11 ele cai fora do while interno e vai pro externo
+#          coluna = coluna +1 #uma hora, quando coluna chegar no 10, ele vai executar uma ultima vez e quando ele for pra 11 ele cai f do while interno e vai pro externo
 #     linha = linha +1
 #     print()
 #     coluna = 1
@@ -58,41 +58,33 @@
 # 9       18      27      36      45      54      63      72      81      90
 # 10      20      30      40      50      60      70      80      90      100
 
-# x = 1
-# cont = 0
-# while x < 3:
-#     y = 0
-#     while y <= 4:
-#         # Iteração
-#         y = y + 1
-#     x = x + 1  
-    
-#     r=2gi
 
 
-# fora = 5
-# while fora > 0:
-#   dentro = 0
-#   while dentro < fora:
+
+
+# f = 5
+# while f > 0:
+#   d = 0
+#   while d < f:
 #     print("oi")
-#     dentro = dentro + 1
-#   fora = fora - 1
+#     d = d + 1
+#   f = f - 1
   
-# r= oi  = 5 + 4 + 3 + 2 + 1 = 15
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
-# oi
+# # r= oi  =4 + 3+2+ 1 =10
+# # def tabuada():
+#     # parte faltante
+
+
+#     tab = 1
+#     while tab <= 10:
+#         print("Tabuada do", tab, ":", end="\t")
+#         i = 1
+#         while i <= 10:
+#             print(tab*i, end = "\t")
+#             i = i + 1
+#         print()
+#         tab = tab + 1
+# tabuada()
 # def tabuada():
 #     # parte faltante
 
@@ -334,21 +326,61 @@
 
 # i = 0
 # while i < 3:
-#   j = 0
-#   while j < 3:
-#     print(3 * i + j + 1, end=" ")
-#     j = j + 1
-#   i = i + 1
+#    j = 0
+#    while j < 3:
+#      print(3 * i + j + 1, end=" ")
+#      j = j + 1
+#    i = i + 1
   
   
 # r=1 2 3 4 5 6 7 8 9
 
-x = 1
-while x < 3:
-    y = 1
-    while y < 3:
-        print(x*y, end = "\t")
-        y = y + 1
-    x = x + 1
+# x = 1
+# while x < 3:
+#     y = 1
+#     while y < 3:
+#         print(x*y, end = "\t")
+#         y = y + 1
+#     x = x + 1
     
-    = 1 2 2 4
+#     = 1 2 2 4
+
+def tabuada():
+    # parte faltante
+
+    tab = 0
+    while tab < 10:
+        tab = tab + 1
+        i = 0
+        while i < 10:
+            i = i + 1
+            print(tab,"x",i,"=",tab*i)
+        print()
+tabuada()
+
+
+
+f = 5
+while f > 0:
+  d = 0
+  while d < f:
+    print("oi")
+    d = d + 1
+  f = f - 1
+  
+#   r=15 
+
+# O loop externo começa com o valor de "f" igual a 5 e o loop interno começa com o valor de "d" igual a 0. O loop interno imprime "oi" enquanto "d" é menor 
+# que "f" e a cada iteração do loop interno, o valor de "d" é incrementado em 1.
+
+# Depois que o loop interno termina sua execução, o valor de "f" é decrementado em 1 e o loop externo continua sua execução. Isso se repete até que o valor 
+# de "f" chegue a 0 e o loop externo termine sua execução.
+
+# Portanto, o loop externo e interno são executados com os seguintes valores:
+
+# Quando "f" é igual a 5 e "d" é igual a 0, o loop interno imprime "oi" uma vez.
+# Quando "f" é igual a 4 e "d" varia de 0 a 3, o loop interno imprime "oi" quatro vezes.
+# Quando "f" é igual a 3 e "d" varia de 0 a 2, o loop interno imprime "oi" três vezes.
+# Quando "f" é igual a 2 e "d" varia de 0 a 1, o loop interno imprime "oi" duas vezes.
+# Quando "f" é igual a 1 e "d" é igual a 0, o loop interno imprime "oi" uma vez.
+# Portanto, o loop termina após a impressão de "oi" um total de 15 vezes (1 + 4 + 3 + 2 + 1 = 15).
