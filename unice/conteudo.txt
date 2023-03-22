@@ -4,3 +4,37 @@ Ex: Von-Newmann : Calculadora, ela executa o cálculo e na sequência vem o resu
 3ª seria a flexibilidade, na arquitetura de Von-Neumann, as instruções e dados são armazenados em uma única memória compartilhada, o que permite que as instruções sejam facilmente modificadas em tempo de execução pelo próprio programa, se necessário. Isso ocorre porque a unidade de controle pode acessar e modificar a memória de instruções da mesma forma que acessa e modifica a memória de dados. Por outro lado, na arquitetura de Harvard, as memórias de instruções e dados são separadas e não podem ser acessadas simultaneamente pela unidade de controle. Isso pode limitar a flexibilidade do programa em tempo de execução, tornando mais difícil modificar as instruções.
 
 
+terceira geração 1964-1977: circuitos integrados ----
+LSI: transistores menores 
+microeletronica/microchips
+ibm 360: 30,40,50,65,75
+
+quarta geração 1977-1991 ----
+computadores pessoais 
+appleII  
+VLSI: Very Large Scale Integration 
+
+1971: Intel 4004 - Primeiro processador em circuito integrado
+
+dezenas de milhares de transistores em um circuito integrado 
+
+1975: Processador intel 8080 
+Altair 8800
+Linguagem Basic (bill gates e paul allen)
+
+inicio da microsoft 
+
+1976: apple1
+1977 apple2
+
+quinta geração ----
+
+1991~
+Passou do VLSI para o ULSI : ULTRA LARGE SCALE Integration
+Milhoes de circuitos por chip
+
+1991- world wide web
+1991-linux
+
+Hardware tudo que da pra ver. encherga de peças
+software não da pra ver
