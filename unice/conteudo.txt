@@ -3,11 +3,33 @@ Segunda: Unidade de controle: Na arquitetura de Von-Neumann, a unidade de contro
 Ex: Von-Newmann : Calculadora, ela executa o cálculo e na sequência vem o resultado. já se for necessário algo mais complexo como o processamento de imagens, essa arquitetura pode se tornar um gargalo no desempenho devido à limitação do acesso sequencial à memória compartilhada. Nesses casos, a arquitetura de Harvard pode oferecer melhor desempenho, pois permite acesso simultâneo e independente a memórias separadas de instruções e dados.
 3ª seria a flexibilidade, na arquitetura de Von-Neumann, as instruções e dados são armazenados em uma única memória compartilhada, o que permite que as instruções sejam facilmente modificadas em tempo de execução pelo próprio programa, se necessário. Isso ocorre porque a unidade de controle pode acessar e modificar a memória de instruções da mesma forma que acessa e modifica a memória de dados. Por outro lado, na arquitetura de Harvard, as memórias de instruções e dados são separadas e não podem ser acessadas simultaneamente pela unidade de controle. Isso pode limitar a flexibilidade do programa em tempo de execução, tornando mais difícil modificar as instruções.
 
+geração 1
+Alan Tuting
+válvulas : Caros, pesados, quentes, grandes consumidores de energia, espaço e mão de obra e possuíam manutenção difícil
+Entrada por chaves, interruptores, soquetes, cabos(programação) e cartões perfurados(entrada de dados).
+Saída por cartôes perfurados
+Primeira ideia de "Bug"
+
+geração 2 1947: Bell Laboratories objetivo substituir as válvulas
+eram menores, geravam menos calor e eram mais baratos 
+transistores.
+IBM 1401 mais popular da 2ª geração
+Transistores principais (SSI E MSI)
+100X menores
+mais rápido e confiável o processamento
+Primeiras linguagens: Assembly, Cobol e Fortan
 
 terceira geração 1964-1977: circuitos integrados ----
 LSI: transistores menores 
 microeletronica/microchips
 ibm 360: 30,40,50,65,75
+Miniaturização e integração de transistores
+Baixíssimo consumo de energia
+Custo muito baixo 
+Multiprogramação
+Aumento da confiabilidade
+Primeiras ideias de chip
+
 
 quarta geração 1977-1991 ----
 computadores pessoais 
@@ -27,6 +49,17 @@ inicio da microsoft
 1976: apple1
 1977 apple2
 
+Diversos circuitos integrados em um único chip
+Surgimento de SO voltados para usuários
+Popularização dos processador
+Criação das interfaces gráficas para os PCs.
+Início da popularização da internet
+Tempo de execução.
+Uso de memória auxiliar
+
+Nextstation monitor separado da cpu
+
+
 quinta geração ----
 
 1991~
@@ -38,3 +71,61 @@ Milhoes de circuitos por chip
 
 Hardware tudo que da pra ver. encherga de peças
 software não da pra ver
+
+
+------------------------
+
+0 e 1 
+
+tensões baixas e tensões altas
+
+burn cd = queima alguns pontos na trilha e tem essa informação onde esta queimando e onde não esta 0 e 1
+
+1byte é um agrupamento de 8 bits
+
+2^8 - 2bits = 2^16 - 4 bits = 2^32
+
+-----
+cálculo binário 
+                base binária: 2          3   2   1   0                                    
+Seguir imagem calculo binário ->número=  1   1   0   0
+                                        2^3 2^2 2^1 2^0 = 0*(2^0 = 1) = 0| 0*(2^1 = 2) = 0 | 1*(2^2 = 4) = 4 (2 elevado a 2 deu 4 e multiplicado por 1 deu 4) | 1*2^3 = 8 = 8;
+                                         8   4   0   0
+                Pega a base e multiplica pela posição depois fazemos a soma de todos os valores
+
+                ada lovelace
+
+
+
+
+Arquitetura de Von Neumann 
+gabinete/ desktop + CPU (parte lógica do computador onde se localiza a unidade de controle e unidade de lógica aritmética) estão em constante comunicação com a unidade de 
+memória = computador 
+                              <-
+Entrada -> Unidade de memória -> unidade de controle(UC) + unidade lógica e aritmetica(ULA) -> saída
+
+-A unidade lógica e aritmética é a parte do computador onde são feitas as operações aritméticas e lógicas com os dados.
+-O tipo de operação a ser executado é determinado por sinais vindos da unidade de controle.
+-A memória é conde ficam armazenados os dados e instruções que vão ser utilizados pela ULA e pela unidade de controle.
+-Os dados a serem operados são lidos dos dispositivos de entrada para a memória
+-Os resultados obtidos são enviados para a memória e dáí para os dispositivos de saída de dados.
+-A Unidade Central de Processamento - UCP (CPU - Central Processing Unity) é a responsável pelo processamento e execução dos programas armazenados na MP(Memória principal)
+
+UC Unidade de Controle: tem por função a vusca, interpretação e controle de execução das instruções,
+e o controle dos demais componentes do computador.
+
+ULA: Unidade Lógica e aritmetica - tem por função a efetiva execução das instruções.
+
+Para a comunicação entre os elementos:
+Barramento: Assim a UC e ULA se comunicam com a unidade de memória 
+
+É um refinamento do modelo de Von Neumann e possui o processador, memória e unidade de entrada/saída.
+Sendo um conjunto de fios que atuam como caminho de dados comum, porém compartilhado, para conectar
+vários subsistemas dentro do sistema.
+
+Barramento de dados: um barramento bidirecional para a transferência de informação entre a CPU e a memória principal.
+Barramento de endereços: permite a transferência de bits que representam um determinado endereço na memória. É unidirecional, pois somente a CPU aciona a memória.
+Barramento de controle: possibilita a passagem de sinais de controle entre a CPU e a memória principal de forma bidirecional.
+
+memória não volátil, não se apaga até que o usuário apague.
+memória volátil, memória ran, memória cache, registradores, etc...
