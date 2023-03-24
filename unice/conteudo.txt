@@ -129,3 +129,128 @@ Barramento de controle: possibilita a passagem de sinais de controle entre a CPU
 
 memória não volátil, não se apaga até que o usuário apague.
 memória volátil, memória ran, memória cache, registradores, etc...
+
+
+
+Pipelining
+Já vimos que o ciclo de instrução pode ser dividido nas etapas de busca e execução. A fase de busca costuma ser o gargalo na velocidade de execução de 
+instruções. Para resolver o problema, os fabricantes incluíram, nos processadores, a capacidade de buscar as instruções de forma antecipada, armazenando a 
+em registradores (prefetch bufers) (TANENBAUM, 2013).
+O conceito de pipelining consiste em dividir o ciclo de instrução em várias 
+etapas menores, cada parte é tratada por partes diferentes do hardware, de forma 
+a executar partes de instruções diferentes de forma simultânea. O conceito ica 
+um pouco mais claro na imagem a seguir, na qual temos uma representação de 
+um pipelining de 4 estágios.
+
+
+
+
+
+
+
+
+
+
+INTERFACES PARA PERIFÉRICOS
+Sabemos que os periféricos são componentes externos ao computador e que 
+precisam ser conectados de alguma forma. Cada periférico tem as suas particularidades, por isso, a forma de conexão pode ser diferente. Percebe-se isso 
+ao olhar um computador por trás e ver a quantidade de conectores diferentes.
+Em geral, essas interfaces podem ser de forma serial ou paralela. A diferenciação de ambas é simples. Uma interface paralela é uma interface que possui uma 
+ligação por meio de várias linhas, que transmitem os bits em paralelo. A quantidade de linhas varia de acordo com o tamanho de palavra que a interface transfere.
+Já a interface serial utiliza apenas uma linha e os bits são transferidos de 
+forma serial, ou seja, um depois do outro (STALLINGS, 2010).
+
+Em geral, as interfaces paralelas eram mais utilizadas para dispositivos que precisavam de uma transferência de dados mais rápida, porém com o avanço das interfaces
+seriais de alta velocidade, as interfaces paralelas foram sendo deixadas de lado.
+
+
+
+Em 1993, representantes de sete empresas (Compaq, DEC, IBM, Intel, 
+Microsot, NEC e Northem Telecom) se reuniram para buscar a melhor 
+maneira de anexar dispositivos de E/S a um computador. Desde então, 
+centenas de outras empresas se juntaram a elas. O padrão resultante, 
+lançado oicialmente em 1998, é denominado USB (Universal Serial 
+Bus — barramento serial universal), e é amplamente executado em 
+computadores pessoais.
+Alguns dos objetivos das empresas que conceberam o USB original e 
+iniciaram o projeto eram os seguintes:
+1. Usuários não terão de ajustar comutadores ou pontes em placas ou 
+dispositivos.
+2. Usuários não terão de abrir a torre para instalar novos dispositivos 
+de E/S.
+3. Haverá apenas um tipo de cabo, que servirá para conectar todos os 
+dispositivos.
+4. A energia para os dispositivos de E/S deve ser fornecida por esse 
+cabo.
+5. Até 127 dispositivos poderão ser ligados a um único computador.
+6. O sistema deve suportar dispositivos de tempo real (por exemplo, 
+som, telefone).
+7. Os dispositivos poderão ser instalados com o computador em funcionamento.
+8. Não será preciso reiniciar o computador após a instalação do dispositivo.
+9. O custo de produção do novo barramento e de seus dispositivos de 
+E/S não deve ser alto (TANENBAUM, 2013, p. 180)
+
+Nesse ponto é que entram as interrupções, que são os mecanismos que o 
+processador usa para tratar eventos de E/S. “Essencialmente, as interrupções permitem que os dispositivos solicitem que o processador pare o que está fazendo 
+no momento e execute um sotware para processar a solicitação do dispositivo” 
+(CARTER, 2003, p. 204). Esse processo é parecido com uma chamada de procedimento de sotware, mas iniciada pelo dispositivo externo.
+
+
+Os elementos que compõem um sistema de E/S (Entrada/Saída) em um computador incluem:
+
+Dispositivos de Entrada: São os componentes que permitem que o usuário forneça informações para o computador, como teclado, mouse, scanner, leitor de código de barras, etc.
+
+Controlador de E/S: É o componente responsável por gerenciar a comunicação entre o dispositivo de E/S e o processador. Ele controla o fluxo de dados de entrada e saída, e 
+executa funções como conversão de dados, 
+temporização, interrupções, etc.
+
+Barramento: É a via de comunicação entre os dispositivos de E/S e o processador. Ele permite a transferência de dados e comandos entre eles. O barramento é dividido em 
+barramento de dados, barramento de endereço e barramento de controle.
+
+Dispositivos de Saída: São os componentes que permitem que o computador forneça informações ao usuário, como monitor, impressora, alto-falantes, etc.
+
+Interface de E/S: É o circuito que conecta o dispositivo de E/S ao controlador de E/S. Ele realiza a conversão de sinais elétricos do dispositivo de E/S em sinais que 
+possam ser entendidos pelo controlador de E/S e vice-versa.
+
+Drivers de Dispositivos: São programas que permitem que o sistema operacional se comunique com os dispositivos de E/S, permitindo que o sistema operacional reconheça o 
+dispositivo, controle suas funções e obtenha informações dele.
+
+
+2BC HEXADECIMAL
+
+Cada dígito em um número hexadecimal representa um valor em base 16, que é uma notação posicional em que cada posição tem um valor que é uma potência de 16. A 
+base 16 utiliza os dígitos de 0 a 9 e as letras A, B, C, D, E e F para representar os valores de 10 a 15, respectivamente.
+
+No caso do número hexadecimal 2BC, o dígito "2" representa 2 x 16^2 (ou 2 x 256), o dígito "B" representa 11 x 16^1 (ou 11 x 16) e o dígito "C" representa 12 x 16^0 (ou 12 x 1).
+
+Portanto, o número hexadecimal 2BC é igual a:
+
+2 x 16^2 + 11 x 16^1 + 12 x 16^0 = 512 + 176 + 12 = 700
+
+Assim, o valor decimal correspondente ao número hexadecimal 2BC é 700.
+
+Para converter um número hexadecimal em binário, é necessário converter cada dígito hexadecimal em um conjunto de quatro dígitos binários, de acordo com a seguinte tabela:
+
+Hexadecimal	Binário
+0	0000
+1	0001
+2	0010
+3	0011
+4	0100
+5	0101
+6	0110
+7	0111
+8	1000
+9	1001
+A	1010
+B	1011
+C	1100
+D	1101
+E	1110
+F	1111
+Assim, para converter o número hexadecimal 2BC em binário, devemos substituir cada dígito por seu equivalente em binário:
+
+2 = 0010
+B = 1011
+C = 1100
+
